@@ -1,10 +1,14 @@
-import Card from "../components/Cards";
-function Results({ activities, setActivities }) {
+import CardDetails from "../components/CardDetails";
+
+function Results() {
   return (
-    <div>
-      <Card activities={activities} setActivities={setActivities} />
+    <div className="modal-wrapper">
+      <div className="modal">
+        <CardDetails />
+      </div>
     </div>
   );
 }
 
 export default Results;
+

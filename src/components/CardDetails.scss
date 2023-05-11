@@ -1,0 +1,76 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$modal-width: 90%;
+$modal-height: 90%;
+
+// Styles
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); // ajoute le flou
+}
+
+.modal {
+  position: relative;
+  width: $modal-width;
+  height: $modal-height;
+  background-color: $secondary-color;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  div {
+    display: flex;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-right: 20px;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+}

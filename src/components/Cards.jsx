@@ -1,6 +1,6 @@
 import image from "../assets/voyage.png";
 import loc from "../assets/localisation.png";
-function Card({ activities, setActivities }) {
+function Card() {
   return (
     <section className="border-2 border-solid border-gray-400 h-[30dvh] w-[20dvw] flex justify-between rounded-md">
       <div>
