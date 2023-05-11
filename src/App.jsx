@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 import "./App.css";
 
-
-function App() {
-  return (
-  
-  );
- 
-=======
 import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -81,7 +73,7 @@ function App() {
       </Routes>
     </Router>
   );
->>>>>>> 00ec3dffda6e908bdb476d29e632c6c24bba6815
+ 
 }
 
 export default App;
